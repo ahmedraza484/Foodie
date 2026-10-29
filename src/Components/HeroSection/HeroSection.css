@@ -1,0 +1,107 @@
+.hero-section {
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url('./background.svg');
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.content-left {
+    width: 60%;
+}
+
+.content-right {
+    width: 40%;
+}
+
+.content-left .heading {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.content-left p {
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+.content-right img {
+    width: 100%;
+    height: 100%;
+}
+
+.order-btn button {
+    padding: 8px 20px;
+    color: black;
+    background: transparent;
+    border: 1px solid #333;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.order-btn button:hover {
+    color: #fff;
+    background: #222;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url('./background.svg');
+        background-repeat: no-repeat;
+        height: 600px;
+    }
+
+    .content-left {
+        margin-bottom: 30px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .content-left .heading {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 30px;
+
+    }
+
+    .content-left p {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .order-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .order-btn button {
+        padding: 8px 20px;
+        color: black;
+        background: transparent;
+        border: 1px solid #333;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+
+    .order-btn button:hover {
+        color: #fff;
+        background: #222;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .content-right {
+        width: 100%;
+    }
+}

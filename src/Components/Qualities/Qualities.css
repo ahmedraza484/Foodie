@@ -1,0 +1,52 @@
+.qualities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.qualities .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 22%;
+    margin-top: 40px;
+}
+
+.qualities .container .quality-text h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.qualities .container .quality-text p {
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .qualities .container {
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .qualities .container {
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .qualities .container {
+        width: 100%;
+    }
+
+    .qualities {
+        padding: 10px;
+    }
+}
